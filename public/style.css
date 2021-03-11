@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+  font-family: 'MuseoModerno', cursive;
+  color: #5f7281;
+}
+
+body {
+  background: #1a1f23;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+
+nav {
+  align-items: center;
+  background-color: #333333;
+  color: #c0c0c0;
+  display: flex;
+  height: 80px;
+  padding: 10px;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+span {
+  color: #3d4952;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+}
+
+.grid-container-students {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+.navbar {
+  background-color: #a0e4e0;
+  height: 50px;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 15px;
+  color: #5f7281;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Bungee Shade', cursive;
+}
+
+.rightNav {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.navlink {
+  color: #5f7281;
+}
+
+.campusesContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.singleCampus {
+  display: flex;
+  justify-content: center;
+}
+
+.singleCampus div {
+  width: 60%;
+}
+
+.campusContainer {
+  background-color: #a0e4e0;
+  margin: 2%;
+  display: flex;
+  border-radius: 15px;
+  align-items: center;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+}
+
+#studentProfile {
+  background-color: rgb(144, 255, 216);
+}
+
+.campusContainer img {
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.campusContainer h2 {
+  text-decoration: underline;
+  color: #3d4952;
+}
+
+.campusContainer h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: mediumaquamarine;
+}
+
+.campusPhotos {
+  padding: 10px;
+}
+
+.rightHalfCampus {
+  padding: 15px;
+}
+
+.rightHalfStudent {
+  padding: 10px;
+}
+
+.rightHalfStudent h2,
+p {
+  font-size: 15px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.field {
+  display: block;
+}
+
+.remove {
+  height: 20px;
+  width: 60px;
+  color: black;
+  background-color: #ff6b6b;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  margin-left: 10px;
+}
+
+::placeholder {
+  color: red;
+}
+
+#StudentRemove {
+  width: 120px;
+}
+
+#StudentRemoveFromCampus {
+  width: 170px;
+}
+
+.remove:hover {
+  cursor: pointer;
+  background-color: #fdaaaa;
+}
+
+.edit {
+  color: white;
+  background-color: mediumaquamarine;
+  border: none;
+  border-radius: 5px;
+  height: 20px;
+  width: 60px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+}
+
+.edit:hover {
+  cursor: pointer;
+  background-color: #90ffc9;
+}
+
+.form-container {
+  display: flex;
+  width: 95vw;
+  /* align-items: center; */
+  /* justify-content: center; */
+  border: red 5px solid;
+  height: 600px;
+}
+
+.form-container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+#campus-form {
+  background: #fbfbfb;
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  background-color: #a0e4e0;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+#student-form {
+  background: #fbfbfb;
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  background-color: rgb(144, 255, 216);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.form-label {
+  color: #3d4952;
+}
+
+.form-content {
+  border: none;
+  outline: none;
+  background-color: #a0e4e0;
+  margin: 3px;
+  border-bottom: 3px solid #cbfcf9;
+}
+
+.form-content-student {
+  border: none;
+  outline: none;
+  background-color: rgb(144, 255, 216);
+  margin: 3px;
+  border-bottom: 3px solid #cbfcf9;
+}
+
+.card {
+  width: 550px;
+  height: 580px;
+  display: flex;
+  justify-content: center;
+  /* margin: 20px; */
+}
+.cardStudent {
+  width: 300px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.form-btn {
+  margin: 10px;
+  background-color: #3d4952;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+}
+.form-btn div {
+  color: #a0e4e0;
+}
+
+.form-btn:hover {
+  background-color: #5f7281;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+}
+
+.create-btn {
+  height: 55px;
+  width: 180px;
+  font-size: 18px;
+  color: #3d4952;
+  border-radius: 15px;
+  background-color: #a0e4e0;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+}
+
+.create-btn:hover {
+  color: #a0e4e0;
+  background-color: #3d4952;
+}
+
+.editCampusTitle h2 {
+  text-align: center;
+}
+
+#studentCreate {
+  background-color: rgb(144, 255, 216);
+}
+
+#studentCreate:hover {
+  background-color: #5f7281;
+  color: rgb(144, 255, 216);
+}
+
+#singleStudent {
+  background-color: rgb(144, 255, 216);
+}
+
+#homePhoto {
+  border-radius: 20px;
+  width: 350px;
+  height: 450px;
+}
+
+#hello {
+  background-color: blue;
+  color: blue;
+}
